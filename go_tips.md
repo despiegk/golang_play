@@ -1,0 +1,3 @@
+go mod init freeflowuniverse/crypto
+go get -u github.com/algorand/go-algorand-sdk/...
+go mod tidy
