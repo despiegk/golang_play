@@ -1,0 +1,9 @@
+.openapi-generator-ignore
+apis/AlbumApi.ts
+apis/index.ts
+index.ts
+models/Album.ts
+models/NotesV1Note.ts
+models/RestErrResponse.ts
+models/index.ts
+runtime.ts

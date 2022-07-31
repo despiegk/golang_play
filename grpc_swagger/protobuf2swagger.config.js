@@ -12,7 +12,7 @@ module.exports = {
     // `paths` will merge by path
     // `components` will merge by component except shcemas
     customSchema: {
-      swagger: '2.0',
+      openapi: '3.0.0',
       // paths: {
       //   '/api/test': {
       //     get: {

@@ -1,12 +1,13 @@
 syntax = "proto3";
 
 package notes.v1;
-option go_package = "github.com/bbengfort/notes/v1";
+option go_package = "github.com/despiegk/golang_play/v1";
 
 
 service NoteService {
-    rpc Fetch(NoteFilter) returns (Notebook) {};
-    rpc Create(Note) returns (Notebook) {};
+    rpc fetch(NoteFilter) returns (Notebook) {};
+    rpc create(Note) returns (Notebook) {};
+    rpc delete(uint64) returns (bool) {};
 }
 
 message Note {
@@ -23,7 +24,6 @@ message NoteFilter {
     string before = 3;
     string after = 4;
     bool private = 5;
-    Notebook nb = 6;
 }
 
 message Notebook {
